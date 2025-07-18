@@ -9,9 +9,9 @@ import UIKit
 
 class UpDownCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet private var mainUIView: UIView!
+    static let identifier = "UpDownCollectionViewCell"
     
-    @IBOutlet private var mainLabel: UILabel!
+    @IBOutlet var cellButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,29 +19,33 @@ class UpDownCollectionViewCell: UICollectionViewCell {
         initUI()
     }
 
-    func configureUI() {
-        configureMainLabel()
+    func configureUI(rowData: Int) {
+//        configureCellButton(rowData)
     }
     
-    private func configureMainLabel() {
-        
+    
+    
+    private func configureCellButton(_ rowData: Int) {
+        cellButton.setTitle("\(rowData)", for: .normal)
     }
     
     private func initUI() {
-        initMainImageView()
-        initMainLabel()
-    }
-    
-    private func initMainImageView() {
-        mainUIView.backgroundColor = .white
+        backgroundColor = .clear
         
-        mainUIView.clipsToBounds = true
-        DispatchQueue.main.async {
-            self.mainUIView.layer.cornerRadius = self.mainUIView.frame.width / 2
-        }
+        initCellButton()
     }
     
-    private func initMainLabel() {
-        mainLabel.font = .systemFont(ofSize: 12)
+    private func initCellButton() {
+        cellButton.backgroundColor = .white
+        
+        cellButton.clipsToBounds = true
+        // TODO: draw로 바꾸기
+        DispatchQueue.main.async {
+            self.cellButton.layer.cornerRadius = self.cellButton.frame.width / 2
+        }
+        
+        cellButton.setTitle("", for: .normal)
+        cellButton.setTitleColor(.black, for: .normal)
+        cellButton.setTitleColor(.white, for: .selected)
     }
 }

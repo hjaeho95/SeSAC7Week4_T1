@@ -4,55 +4,37 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="UpDownCollectionViewCell" customModule="SeSAC7Week4_T1" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UpDownCollectionViewCell" id="gTV-IL-0wX" customClass="UpDownCollectionViewCell" customModule="SeSAC7Week4_T1" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cd0-52-B0q">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBw-sW-75M">
                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ca-Nn-vy9">
-                                <rect key="frame" x="29" y="39.666666666666664" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="2Ca-Nn-vy9" firstAttribute="centerX" secondItem="cd0-52-B0q" secondAttribute="centerX" id="Swu-YP-L9U"/>
-                            <constraint firstItem="2Ca-Nn-vy9" firstAttribute="centerY" secondItem="cd0-52-B0q" secondAttribute="centerY" id="glG-ND-dcG"/>
-                        </constraints>
-                    </view>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    </button>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="cd0-52-B0q" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2sf-Uo-mb3"/>
-                <constraint firstItem="cd0-52-B0q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6Do-EE-gaI"/>
-                <constraint firstAttribute="trailing" secondItem="cd0-52-B0q" secondAttribute="trailing" id="aAd-Hw-Dmg"/>
-                <constraint firstAttribute="bottom" secondItem="cd0-52-B0q" secondAttribute="bottom" id="lle-sV-l0v"/>
+                <constraint firstAttribute="trailing" secondItem="CBw-sW-75M" secondAttribute="trailing" id="0RM-6j-Olu"/>
+                <constraint firstAttribute="bottom" secondItem="CBw-sW-75M" secondAttribute="bottom" id="4VQ-O6-ChP"/>
+                <constraint firstItem="CBw-sW-75M" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="N8b-sg-suk"/>
+                <constraint firstItem="CBw-sW-75M" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jZ6-EN-Jzy"/>
             </constraints>
             <size key="customSize" width="136" height="127"/>
             <connections>
-                <outlet property="mainLabel" destination="2Ca-Nn-vy9" id="lZ7-x3-2Zo"/>
-                <outlet property="mainUIView" destination="cd0-52-B0q" id="v93-zN-pwv"/>
+                <outlet property="cellButton" destination="CBw-sW-75M" id="Dms-nk-f4f"/>
             </connections>
             <point key="canvasLocation" x="195.41984732824426" y="15.845070422535212"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
