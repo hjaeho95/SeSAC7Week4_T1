@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		27D418992E2A0B6700F5727E /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 27D418982E2A0B6700F5727E /* IQKeyboardManagerSwift */; };
+		27D418EC2E2A32FC00F5727E /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 27D418EB2E2A32FC00F5727E /* Toast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D418EC2E2A32FC00F5727E /* Toast in Frameworks */,
 				27D418992E2A0B6700F5727E /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +86,7 @@
 			name = SeSAC7Week4_T1;
 			packageProductDependencies = (
 				27D418982E2A0B6700F5727E /* IQKeyboardManagerSwift */,
+				27D418EB2E2A32FC00F5727E /* Toast */,
 			);
 			productName = SeSAC7Week4_T1;
 			productReference = 27D417C62E29DD8000F5727E /* SeSAC7Week4_T1.app */;
@@ -115,6 +118,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				27D418972E2A0B6700F5727E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				27D418EA2E2A32FC00F5727E /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 27D417C72E29DD8000F5727E /* Products */;
@@ -362,6 +366,14 @@
 				minimumVersion = 8.0.1;
 			};
 		};
+		27D418EA2E2A32FC00F5727E /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -369,6 +381,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 27D418972E2A0B6700F5727E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		27D418EB2E2A32FC00F5727E /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27D418EA2E2A32FC00F5727E /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
