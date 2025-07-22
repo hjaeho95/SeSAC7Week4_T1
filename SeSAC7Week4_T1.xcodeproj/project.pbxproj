@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		278EB7502E2FD65700E18DF7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 278EB74F2E2FD65700E18DF7 /* SnapKit */; };
 		27D418992E2A0B6700F5727E /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 27D418982E2A0B6700F5727E /* IQKeyboardManagerSwift */; };
 		27D418EC2E2A32FC00F5727E /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 27D418EB2E2A32FC00F5727E /* Toast */; };
 /* End PBXBuildFile section */
@@ -41,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				278EB7502E2FD65700E18DF7 /* SnapKit in Frameworks */,
 				27D418EC2E2A32FC00F5727E /* Toast in Frameworks */,
 				27D418992E2A0B6700F5727E /* IQKeyboardManagerSwift in Frameworks */,
 			);
@@ -87,6 +89,7 @@
 			packageProductDependencies = (
 				27D418982E2A0B6700F5727E /* IQKeyboardManagerSwift */,
 				27D418EB2E2A32FC00F5727E /* Toast */,
+				278EB74F2E2FD65700E18DF7 /* SnapKit */,
 			);
 			productName = SeSAC7Week4_T1;
 			productReference = 27D417C62E29DD8000F5727E /* SeSAC7Week4_T1.app */;
@@ -119,6 +122,7 @@
 			packageReferences = (
 				27D418972E2A0B6700F5727E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				27D418EA2E2A32FC00F5727E /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				278EB74E2E2FD65700E18DF7 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 27D417C72E29DD8000F5727E /* Products */;
@@ -358,6 +362,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		278EB74E2E2FD65700E18DF7 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
 		27D418972E2A0B6700F5727E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
@@ -377,6 +389,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		278EB74F2E2FD65700E18DF7 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 278EB74E2E2FD65700E18DF7 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		27D418982E2A0B6700F5727E /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 27D418972E2A0B6700F5727E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
