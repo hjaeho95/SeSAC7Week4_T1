@@ -16,9 +16,7 @@ class UpDownViewController: UIViewController {
     
     @IBOutlet private var mainImageView: UIImageView!
     
-    
     @IBOutlet private var textField: UITextField!
-    
     
     @IBOutlet private var startButton: UIButton!
     
